@@ -6,16 +6,16 @@ export const Container = styled.div`
     `;
 
 export const Head = styled.div`
-    height: 100px;
-    line-height: 100px;
-    background: ${colors.light};
+    height: 80px;
+    line-height: 80px;
+    background: ${colors.medium};
   
       a {
       text-decoration: none;
-      color: ${colors.blue};
+      color: ${colors.white};
       font-weight: bold;
           &:hover {
-            color: ${colors.white}
+            color: ${colors.blue}
           }
       
       }

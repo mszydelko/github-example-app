@@ -4,15 +4,13 @@ import { colors } from "../../utils/styles/color.style";
 export const Container = styled.div`
     background: ${colors.white};
     color: ${colors.medium};
-    height: 40px;
-    line-height: 40px;
-
+    height: 30px
+    line-height: 20px;
     
         &>div {
-        border-top: 1px solid ${colors.blue}
-        color: ${colors.white}
-        background-color: ${colors.medium}
-        vertical-align: middle;
+        margin-top: 20px;
+        border-top: 1px solid ${colors.light}
+        color: ${colors.medium}
         font-size: 12px;
         }
     `;
