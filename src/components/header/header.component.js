@@ -8,10 +8,13 @@ class Header extends Component {
     render() {
         return (
             <Container>
+
                 <Head>
+                    <Wrapper>
                     <a href="/">
                         GITHUB USers Example App
                     </a>
+                    </Wrapper>
                 </Head>
             </Container>
 

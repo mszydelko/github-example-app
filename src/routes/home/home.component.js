@@ -9,6 +9,7 @@ class Home extends Component {
 
     state = {
         users: [],
+        inputValue: ''
     };
 
     componentDidMount () {
@@ -20,7 +21,14 @@ class Home extends Component {
     }
 
     addNewUser = () => {
-        console.log(this.refs.value)
+        this.setState({
+            users: [...this.state.users, this.state.userValue],
+            userValue: '',
+        });
+    };
+
+    userOnChange = (event) => {
+        this.setState({userValue: event.target.value});
     };
 
     render() {
@@ -31,7 +39,7 @@ class Home extends Component {
                     <Wrapper>
                         <UserLoginBox>
                             <Description> Please add GitHub user name to observable. </Description>
-                            <UserInput ref="userInput"/>
+                            <UserInput type="text" value ={this.state.userValue} onChange={this.userOnChange }/>
                             <UserButton onClick={this.addNewUser}>
                                 Add user
                             </UserButton>
